@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - D3: Horizontal Bar Chart</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+<body>
+  <div class="barVisual">
+  <h1>Explore Produce Nutrition by Farmer</h1>
+  <h2>Each circle below represents a crop grown by each individiual farm. </h2>
+  <p>What is the Brix scale? <br/>
+    The Brix scale was created by Dr caret Reams in the 1970s. The scale is based on the sugar content within a plant. High Brix values correlate to stronger resistance to pests and disease, excellent yields, more flavor, and higher levels of biological activity in the soil - all elements associated with good nutrition - although this is yet to be rigorously tested.</p>
+   
+    <div class="sticky-div"> 
+      <h3>Filter by Type:</h3>
+      <div class="category-buttons">
+        <button class="all active" onClick="myFunctionAll()">All</button>
+        <button class="carrot" onClick="myFunction('.carrot')">Carrot</button>
+        <button class="lettuce" onClick="myFunction('.lettuce')">Lettuce</button>
+        <button class="cherry_tomato" onClick="myFunction('.cherry_tomato')">Cherry Tomato</button>
+        <button class="grape" onClick="myFunction('.grape')">Grape</button>
+        <button class="kale" onClick="myFunction('.kale')">Kale</button>
+        <button class="spinach" onClick="myFunction('.spinach')">Spinach</button>
+      </div>
+
+  <svg class="labelContainer" viewBox="0 0 700 50" preserveAspectRatio="xMinYMin slice" width="100%" height="100%" style="width: 100%; overflow: hidden;"><svg width="700" height="50"></svg></svg>
+    </div>
+  <svg class="container" viewBox="0 0 700 2000" preserveAspectRatio="xMinYMin slice" width="100%" height="100%" style="width: 100%; overflow: hidden;"><svg width="700" height="2000"></svg></svg>
+    <div class="notes">
+  <p>Source: RFC</p>
+    </div>
+  </div>
+  
+<!-- load the d3.js library -->    	
+<script src="//d3js.org/d3.v4.min.js"></script>
+</body>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
